@@ -1,23 +1,14 @@
-import type { NextApiRequest, NextApiResponse } from 'next';
+import { VercelRequest, VercelResponse } from '@vercel/node';
 
-export default (req: NextApiRequest, res: NextApiResponse) => {
-    const auth = req.headers.authorization || '';
-    const [type, encoded] = auth.split(' ');
-    let decoded;
+export default (req: VercelRequest, res: VercelResponse) => {
+  const auth = req.headers.authorization || '';
+  const decodedAuth = Buffer.from(auth.split(' ')[1] || '', 'base64').toString('utf8');
 
-    try {
-        decoded = Buffer.from(encoded, 'base64').toString('utf8');
-    } catch (e) {
-        decoded = '';
-    }
+  console.log('Decoded Auth:', decodedAuth);  // This should print "YOUR_USERNAME:YOUR_PASSWORD"
 
-    const [username, password] = decoded.split(':');
-
-    if (type === 'Basic' && username === 'YOUR_USERNAME' && password === 'YOUR_PASSWORD') {
-        // Authorized
-        res.status(200).send('Authorized');
-    } else {
-        // Not Authorized
-        res.status(401).setHeader('WWW-Authenticate', 'Basic realm="Restricted"').send('Authentication required');
-    }
+  if (decodedAuth === 'YOUR_USERNAME:YOUR_PASSWORD') {
+    res.status(200).send("Authenticated");
+  } else {
+    res.status(401).send("Authentication failed");
+  }
 };
