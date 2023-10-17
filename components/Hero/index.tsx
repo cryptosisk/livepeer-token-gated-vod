@@ -195,7 +195,7 @@ export default function Hero() {
       <div className="w-full h-1/2 lg:h-full lg:w-1/2 ">
         <div className="relative">
           <img
-            src="https://solana-nft.withlivepeer.com/_next/image?url=%2Fhero.png&w=2048&q=75"
+            src="./public/theaterhero.jpg"
             alt="BannerImage"
             className=" h-[90vh] w-full lg:object-cover lg:block hidden rounded-xl"
           />
