@@ -203,17 +203,15 @@ export default function Hero() {
       </div>
       <div className="lg:w-1/2  w-full h-full lg:mr-20">
         <p className="text-base font-light text-primary lg:mt-20 mt-5">
-          Livepeer x Ethereum x Lit
+          Theater.wtf v0.01 demo
         </p>
         <h1 className="text-5xl font-bold font-MontHeavy text-gray-100 mt-6 leading-tight">
-          Token gate your videos on Ethereum with Livepeer.
+          A gated movie theater, where holders of specific tokens can access films.
         </h1>
         <p className="text-base font-light text-zinc-500 mt-2">
-          Token gating is a powerful tool for content creators who want to
-          monetize their video content. With Livepeer, you can easily create a
-          gated video that requires users to hold a certain amount of tokens/NFT
-          in order to access the content. <br /> <br /> Livepeer&apos;s token
-          gating feature is easy to use and highly customizable
+          Token gating is a tool that allows us to create crypto-native movie theaters. Filmmakers can create a
+          gated movie thater that requires users to hold a certain amount of tokens/NFT
+          in order to access the film.
         </p>
         <div className="flex flex-col mt-6">
           <div className="h-4" />
