@@ -203,15 +203,14 @@ export default function Hero() {
       </div>
       <div className="lg:w-1/2  w-full h-full lg:mr-20">
         <p className="text-base font-light text-primary lg:mt-20 mt-5">
-          Theater.wtf v0.01 demo
+          v0.01 theater.wtf — demo build
         </p>
         <h1 className="text-5xl font-bold font-MontHeavy text-gray-100 mt-6 leading-tight">
-          A gated movie theater, where holders of specific tokens can access films.
+          Open a crypto movie theater by selecting the token needed to access the film.
         </h1>
         <p className="text-base font-light text-zinc-500 mt-2">
-          Token gating is a tool that allows us to create crypto-native movie theaters. Filmmakers can create a
-          gated movie thater that requires users to hold a certain amount of tokens/NFT
-          in order to access the film.
+          Theater.wtf is an experimental platform for opening crypto-native movie theaters, which are token-gated viewing experiences, built to empower filmmakers to release and monetize their films
+          using the traditional theatrical exhibition revenue model.
         </p>
         <div className="flex flex-col mt-6">
           <div className="h-4" />
