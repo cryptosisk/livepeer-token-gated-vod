@@ -63,7 +63,7 @@ export default function Watch() {
       <Nav />
       <div className="flex flex-col text-lg items-center justify-center mt-40">
         <h1 className="text-4xl font-bold font-MontHeavy text-gray-100 mt-6">
-          VOD Token Gating with Lit Signing Conditions
+          Token Gated Movie Theaters
         </h1>
         <p className="text-base font-light text-gray-500 mt-2 w-1/2 text-center">
           Prove your identity to access the gated content.
