@@ -195,7 +195,7 @@ export default function Hero() {
       <div className="w-full h-1/2 lg:h-full lg:w-1/2 ">
         <div className="relative">
           <img
-            src="./public/theaterhero.jpg"
+            src="public/theaterhero.jpg"
             alt="BannerImage"
             className=" h-[90vh] w-full lg:object-cover lg:block hidden rounded-xl"
           />
