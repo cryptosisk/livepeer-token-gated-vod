@@ -63,10 +63,10 @@ export default function Watch() {
       <Nav />
       <div className="flex flex-col text-lg items-center justify-center mt-40">
         <h1 className="text-4xl font-bold font-MontHeavy text-gray-100 mt-6">
-          Token Gated Movie Theaters
+          Token Gated Movie Theater
         </h1>
         <p className="text-base font-light text-gray-500 mt-2 w-1/2 text-center">
-          Prove your identity to access the gated content.
+          Holders of the NFT Ticket can access the gated video. Visit irreversible.wtf/films for where to buy NFT Tickets.
         </p>
       </div>
       <div className="flex justify-center text-center font-matter">
@@ -77,7 +77,7 @@ export default function Watch() {
           )}
           {gateState == "closed" && (
             <p className="text-white">
-              Sorry, you do not have access to this content
+              Sorry, you do not hold the NFT ticket to access to this content. Please visit irreversible.wtf/films for more information on how to buy the NFT Ticket.
             </p>
           )}
         </div>
