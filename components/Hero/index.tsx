@@ -206,7 +206,7 @@ export default function Hero() {
           v0.01 theater.wtf — demo build
         </p>
         <h1 className="text-5xl font-bold font-MontHeavy text-gray-100 mt-6 leading-tight">
-          Open a crypto movie theater by selecting the token needed to access the film.
+          Theater.wtf — Open a crypto movie theater by selecting the token needed to view the full film.
         </h1>
         <p className="text-base font-light text-zinc-500 mt-2">
           Theater.wtf is an experimental platform for opening crypto-native movie theaters, which are token-gated viewing experiences, built to empower filmmakers to release and monetize their films
