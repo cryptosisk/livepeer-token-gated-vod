@@ -195,7 +195,7 @@ export default function Hero() {
       <div className="w-full h-1/2 lg:h-full lg:w-1/2 ">
         <div className="relative">
           <img
-            src="https://solana-nft.withlivepeer.com/_next/image?url=%2Fhero.png&w=2048&q=75"
+            src="/theaterhero.jpg"
             alt="BannerImage"
             className=" h-[90vh] w-full lg:object-cover lg:block hidden rounded-xl"
           />
@@ -203,17 +203,14 @@ export default function Hero() {
       </div>
       <div className="lg:w-1/2  w-full h-full lg:mr-20">
         <p className="text-base font-light text-primary lg:mt-20 mt-5">
-          Livepeer x Ethereum x Lit
+          v0.01 theater.wtf — demo build
         </p>
         <h1 className="text-5xl font-bold font-MontHeavy text-gray-100 mt-6 leading-tight">
-          Token gate your videos on Ethereum with Livepeer.
+          Theater.wtf — Open a crypto movie theater by selecting the token needed to view the full film.
         </h1>
         <p className="text-base font-light text-zinc-500 mt-2">
-          Token gating is a powerful tool for content creators who want to
-          monetize their video content. With Livepeer, you can easily create a
-          gated video that requires users to hold a certain amount of tokens/NFT
-          in order to access the content. <br /> <br /> Livepeer&apos;s token
-          gating feature is easy to use and highly customizable
+          Theater.wtf is an experimental platform for opening crypto-native movie theaters, which are token-gated viewing experiences, built to empower filmmakers to release and monetize their films
+          using the traditional theatrical exhibition revenue model.
         </p>
         <div className="flex flex-col mt-6">
           <div className="h-4" />
