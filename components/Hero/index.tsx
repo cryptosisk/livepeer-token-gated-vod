@@ -59,7 +59,7 @@ export default function Hero() {
         try {
           setAuthSig({
             ethereum: await LitJsSdk.checkAndSignAuthMessage({
-              chain: "ethereum",
+              chain: "arbitrum",
               switchChain: false,
             }),
           });
@@ -299,7 +299,7 @@ export default function Hero() {
                 onClose={() => {
                   setShowShareModal(false);
                 }}
-                chainsAllowed={["ethereum"]}
+                chainsAllowed={["ethereum","polygon","optimism","arbitrum"]}
                 injectInitialState={true}
                 defaultChain={"ethereum"}
                 initialUnifiedAccessControlConditions={

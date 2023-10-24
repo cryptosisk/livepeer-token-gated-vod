@@ -7,7 +7,7 @@ import {
   RainbowKitProvider,
 } from "@rainbow-me/rainbowkit";
 import { configureChains, createClient, WagmiConfig } from "wagmi";
-import { mainnet } from "wagmi/chains";
+import { mainnet, optimism, polygon, arbitrum } from 'wagmi/chains'
 import { publicProvider } from "wagmi/providers/public";
 import { Toaster } from "react-hot-toast";
 import {
@@ -19,7 +19,7 @@ import "lit-share-modal-v3/dist/ShareModal.css";
 import { LitProvider } from "../hooks/useLit";
 
 export default function App({ Component, pageProps }: AppProps) {
-  const { chains, provider } = configureChains([mainnet], [publicProvider()]);
+  const { chains, provider } = configureChains([mainnet, optimism, polygon, arbitrum], [publicProvider()]);
 
   const { connectors } = getDefaultWallets({
     appName: "Livepeer VOD Tokengated app",
